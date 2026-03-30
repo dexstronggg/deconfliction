@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-03-30T14:46:57.383213",
+  "config": {
+    "agents": 50,
+    "seed": 42,
+    "wind": true,
+    "world_size": 10000.0,
+    "dt": 0.1,
+    "max_time": 600.0,
+    "preferred_speed": 15.0,
+    "collision_dist": 3.0
+  },
+  "results": [
+    {
+      "algorithm": "No-Control",
+      "complexity": "O(1)",
+      "total_collisions": 0,
+      "collision_rate": 0.0,
+      "success_rate": 0.86,
+      "makespan": 599.6000000000678,
+      "avg_arrival_time": 337.41627906978476,
+      "avg_speed_utilization": 0.9138998656312884,
+      "computation_time": 0.0032465000258525833,
+      "total_sim_time": 1.5597382999985712,
+      "steps": 6000
+    },
+    {
+      "algorithm": "FCFS",
+      "complexity": "O(N^2)",
+      "total_collisions": 2,
+      "collision_rate": 0.04,
+      "success_rate": 0.84,
+      "makespan": 596.400000000067,
+      "avg_arrival_time": 333.4023809523974,
+      "avg_speed_utilization": 0.9106247636000124,
+      "computation_time": 0.9803680995537434,
+      "total_sim_time": 2.6560768999916036,
+      "steps": 6000
+    },
+    {
+      "algorithm": "VO-Speed-Only (SSD)",
+      "complexity": "O(N^2)",
+      "total_collisions": 0,
+      "collision_rate": 0.0,
+      "success_rate": 0.86,
+      "makespan": 596.300000000067,
+      "avg_arrival_time": 337.40000000001726,
+      "avg_speed_utilization": 0.9126269493820304,
+      "computation_time": 11.415244699601317,
+      "total_sim_time": 13.280672199995024,
+      "steps": 6000
+    },
+    {
+      "algorithm": "ORCA-Projected",
+      "complexity": "O(N^2)",
+      "total_collisions": 1,
+      "collision_rate": 0.02,
+      "success_rate": 0.86,
+      "makespan": 597.8000000000674,
+      "avg_arrival_time": 337.07674418606376,
+      "avg_speed_utilization": 0.9178894427824696,
+      "computation_time": 109.72878779986058,
+      "total_sim_time": 111.66288549998717,
+      "steps": 6000
+    }
+  ]
+}
